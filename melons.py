@@ -38,10 +38,10 @@ class GovernmentMelonOrder(AbstractMelonOrder):
     tax = 0
 
     def __init__(self, species, qty, passed_inspection):
-        super().init__(species, qty)
+        super().__init__(species, qty)
         self.passed_inspection = passed_inspection
 
-    def mark_inspection(passed):
+    def mark_inspection(self, passed):
         self.passed_inspection = passed    
 
 
